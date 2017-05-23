@@ -29,6 +29,10 @@
 
 @REM Begin all REM lines with '@' in case MAVEN_BATCH_ECHO is 'on'
 @echo off
+
+set JAVA_HOME=D:\Java\jdk1.8.0_05
+echo "#### JAVA_HOME=%JAVA_HOME%"
+
 @REM enable echoing my setting MAVEN_BATCH_ECHO to 'on'
 @if "%MAVEN_BATCH_ECHO%"=="on" echo %MAVEN_BATCH_ECHO%
 
@@ -61,6 +65,7 @@ goto error
 
 :chkMHome
 set "MAVEN_HOME=%~dp0.."
+echo "#### MAVEN_HOME=%MAVEN_HOME%"
 if not "%MAVEN_HOME%"=="" goto valMHome
 goto error
 
